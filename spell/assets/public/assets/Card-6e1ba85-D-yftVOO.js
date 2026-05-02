@@ -1,1 +1,0 @@
-import{j as s,F as a}from"./index-Bx4JamK3.js";const e=({children:r,...o})=>s.jsx(a,{bg:"background.secondary",boxShadow:"inset 0 0 0 1px rgba(146, 146, 146, 0.10)",borderRadius:"xl",p:"3",...o,children:r});export{e as C};

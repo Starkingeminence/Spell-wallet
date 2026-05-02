@@ -1,1 +1,0 @@
-import{Q as o,U as i}from"./index-Bx4JamK3.js";import{u}from"./useChainClients-6e1ba85-DWxkBpOI.js";const c=({id:e})=>{const{solanaClient:n}=u(),{data:s,isLoading:a,refetch:r}=o({queryKey:[i.walletNFT,e],queryFn:()=>n.getNft(e),select:t=>{if(t)return t},enabled:!!e,initialData:void 0});return{nft:s,isLoading:a,refetch:r}};export{c as u};

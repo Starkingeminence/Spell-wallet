@@ -1,1 +1,0 @@
-import{ap as t,aq as c,ar as n,as as o}from"./index-Bx4JamK3.js";const a="connected-dapps",p=()=>t(a,{}),d=e=>n(a,e),C=e=>{const s=p();delete s[e],d(s)},r="current-chain-id",u=()=>t(r,c.chainId),l=e=>{let s;return typeof e=="string"?s=parseInt(e,16):s=e,o(s)?n(r,s):!1};export{u as a,d as b,C as d,p as g,l as s};

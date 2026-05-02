@@ -1,1 +1,0 @@
-import{Q as c,ba as u,U as l,bb as b}from"./index-Bx4JamK3.js";const g=({address:e,enabled:r=!0})=>{const{data:n,isLoading:s,refetch:t,isFetching:o}=c({queryKey:[l.player,e],queryFn:()=>u(e),select:a=>({...a,balance:b(a.balance),exactBalance:a.balance}),enabled:!!e&&r});return{player:n,isLoading:s,isFetching:o,refetch:t}},i="/assets/dragoon-K-Bw0X-_.png";export{i as d,g as u};

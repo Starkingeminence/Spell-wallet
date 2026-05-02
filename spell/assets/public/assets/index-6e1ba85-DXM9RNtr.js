@@ -1,1 +1,0 @@
-const s="/assets/box-epic-DB4uHurN.png",o="/assets/box-mythical-BQBAXylK.png",c="/assets/box-uncommon-C_aFfPz2.png",a={uncommon:c,epic:s,mythical:o},n={uncommon:"tag.green",epic:"tag.purple",mythical:"state.progress"};export{n as B,a as C,s as a,o as b,c};

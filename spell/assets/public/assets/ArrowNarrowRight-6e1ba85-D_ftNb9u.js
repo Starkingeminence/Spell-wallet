@@ -1,1 +1,0 @@
-import{j as o,l as s}from"./index-Bx4JamK3.js";const n=r=>o.jsx(s.svg,{xmlns:"http://www.w3.org/2000/svg",fill:"none",viewBox:"0 0 24 24",...r,children:o.jsx("path",{stroke:"currentColor",strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M4 12h16m0 0-6-6m6 6-6 6"})});export{n as A};
