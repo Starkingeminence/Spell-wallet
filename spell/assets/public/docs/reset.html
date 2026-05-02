@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>App Reset | Spell Wallet</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura-vader.css" media="screen" />
+
+<body style="background-color: #0A0A0A;">
+    <header id="header"></header>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        if (params.has('showBackButton')) {
+            document.getElementById('header').innerHTML =
+                '<a style="margin-top: 40px; display: inline-block; font-size: 120%; color: #898989;" onclick="history.back()">Go back</a>';
+        }
+    </script>
+
+    <div>
+        <h1 id="resetting-the-spell-wallet-app">Resetting the Spell Wallet App</h1>
+        <p>Spell Wallet is a secure <strong>MPC (Multi-Party Computation)</strong> wallet. Unlike traditional wallets
+            that
+            use a single seed phrase, Spell Wallet uses <strong>seed shares</strong> — one stored on your device and the
+            other on Spell Wallet’s servers.</p>
+        <p>If you decide to stop using Spell Wallet and want to remove all personal data, you can use the <strong>Reset
+                App</strong> feature.</p>
+        <h2 id="important-warning">⚠️ Important Warning</h2>
+        <p>Resetting the app is <strong>permanent and irreversible</strong>.</p>
+        <ul>
+            <li>All data, including wallet shares, will be <strong>permanently deleted</strong>.</li>
+            <li>You will <strong>lose access to your wallet</strong>.</li>
+            <li>Ensure you <strong>transfer all funds to an external wallet</strong> before proceeding.</li>
+        </ul>
+        <blockquote>
+            <p>Once the reset is complete, you will not be able to recover your wallet or funds.</p>
+        </blockquote>
+        <h2 id="how-to-reset-the-app">How to Reset the App</h2>
+        <p>Follow these steps:</p>
+        <ol>
+            <li>Open the <strong>Spell Wallet</strong> app.</li>
+            <li>Navigate to <strong>Settings</strong>.</li>
+            <li>Tap <strong>Security &amp; Privacy</strong>.</li>
+            <li>Select <strong>Reset App</strong>.</li>
+            <li>Confirm the reset when prompted.</li>
+        </ol>
+        <img src="./reset.png" alt="Reset tutorial">
+        <p>After the reset, the app will restart and return to the welcome screen. From there, you can <strong>create a
+                new
+                wallet</strong> or <strong>sign up again</strong>.</p>
+    </div>
+
+</body>
+
+</html>

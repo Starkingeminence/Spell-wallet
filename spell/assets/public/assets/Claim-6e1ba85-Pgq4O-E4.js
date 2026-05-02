@@ -1,0 +1,1 @@
+import{av as a,j as e,k as s,aw as i,ax as r}from"./index-Bx4JamK3.js";import"./browserExtension/inpage.js";const n=()=>{const t=a("(max-height: 640px)");return e.jsx(s,{withFooter:!1,header:{type:"back",title:"Claiming"},contentProps:{mt:t?0:"6"},children:e.jsx(i,{children:e.jsx(r,{withMissionDrawer:!1})})})};export{n as Claim};

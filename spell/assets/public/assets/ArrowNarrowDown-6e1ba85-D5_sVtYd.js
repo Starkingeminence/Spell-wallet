@@ -1,0 +1,1 @@
+import{j as o,l as a}from"./index-Bx4JamK3.js";const s=r=>o.jsx(a.svg,{xmlns:"http://www.w3.org/2000/svg",fill:"none",viewBox:"0 0 24 24",...r,children:o.jsx("path",{fill:"currentColor",d:"M13 4a1 1 0 1 0-2 0v13.586l-4.293-4.293a1 1 0 0 0-1.414 1.414l6 6a1 1 0 0 0 1.414 0l6-6a1 1 0 0 0-1.414-1.414L13 17.586z"})});export{s as A};

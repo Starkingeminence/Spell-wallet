@@ -1,0 +1,1 @@
+import{Q as i,be as o,U as c}from"./index-Bx4JamK3.js";var E=(e=>(e.OPENED="opened",e.AVAILABLE="available",e.EXPIRED="expired",e))(E||{});const n=({type:e,enabled:s=!0})=>{const{data:t,isLoading:r,refetch:u}=i({queryKey:[c.tickets,e,s],queryFn:()=>o({type:e}),enabled:s&&e!==void 0});return{tickets:t,isLoading:r,refetch:u}};export{E as R,n as u};

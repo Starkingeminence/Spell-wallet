@@ -1,0 +1,1 @@
+import{Q as a,R as i,U as u}from"./index-Bx4JamK3.js";const n=({address:t})=>{const{data:e,isLoading:s}=a({queryKey:[u.chestStatistic,t],queryFn:()=>i(t),enabled:!!t});return{data:e,isLoading:s}};export{n as u};

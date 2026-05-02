@@ -1,0 +1,1 @@
+import{j as o,T as i}from"./index-Bx4JamK3.js";const l=(e,p,n)=>{const r=e.split(/\[\]/),s=[];for(let t=0;t<r.length;t++)s.push(r[t]),t<r.length-1&&s.push(o.jsx(i,{as:"span",color:n,children:p},`prize-${t}`));return s};export{l as r};

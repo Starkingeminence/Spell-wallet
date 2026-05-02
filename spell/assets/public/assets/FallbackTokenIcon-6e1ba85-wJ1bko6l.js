@@ -1,0 +1,1 @@
+import{j as r,F as n}from"./index-Bx4JamK3.js";const l=({symbol:e,isLarge:o,...t})=>r.jsx(n,{overflow:"hidden",textAlign:"center",justifyContent:"center",alignItems:"center",bgColor:"black",borderRadius:"full",whiteSpace:"nowrap",textOverflow:"ellipsis",...t,children:e?.substring(0,4)||""});export{l as F};

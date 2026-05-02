@@ -1,0 +1,1 @@
+import{W as n}from"./index-Bx4JamK3.js";import"./browserExtension/inpage.js";class t extends n{async alert(e){window.alert(e.message)}async prompt(e){const a=window.prompt(e.message,e.inputText||"");return{value:a!==null?a:"",cancelled:a===null}}async confirm(e){return{value:window.confirm(e.message)}}}export{t as DialogWeb};

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+/>
+<link rel="icon" href="favicon.ico" />
+<title>Spell Wallet</title>
+<!-- Preload fonts -->
+<link
+rel="preload"
+href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+as="style"
+/>
+<link
+rel="stylesheet"
+href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+/>
+<style>:root {
+--tg-theme-header-bg-color: black !important;
+}
+html {
+background: black;
+max-width: 768px;
+margin: 0 auto;
+}
+body {
+padding: 0;
+margin: 0;
+min-height: 100vh;
+overflow: hidden;
+box-sizing: border-box;
+-webkit-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-text-size-adjust: none;
+background: #97eb5c;
+}
+input[type='password']::-webkit-credentials-auto-fill-button {
+margin-right: 32px;
+}
+/* HTML: <div class="loader"></div> */
+.logo-splash {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+display: flex;
+flex-direction: column;
+align-content: center;
+align-items: center;
+justify-content: center;
+gap: 50px;
+}
+.logo-splash img {
+width: 180px;
+animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+0% {
+transform: scale(1);
+}
+50% {
+transform: scale(1.1);
+}
+100% {
+transform: scale(1);
+}
+}</style>
+<!-- We need the following variable included in the global window object,
+we have dependencies that rely on this variable if you are going to connect a CDN script here,
+also check window.exports if you don't find it directly in your script or window object -->
+<script>
+var exports = {};
+</script>
+<script>
+if (typeof window.SPELL_ENV === 'undefined') {
+window.SPELL_ENV = {};
+}
+window.SPELL_ENV = {
+...window.SPELL_ENV,
+MODE: 'production',
+};
+</script>
+<script>
+(() => {
+const receiveEvent = () => {};
+window.TelegramGameProxy_receiveEvent = receiveEvent;
+window.TelegramGameProxy = { receiveEvent };
+window.Telegram = { WebView: { receiveEvent } };
+})();
+</script>
+<script
+              
+          >(()=>{const e="spell_wallet_error_device_id";let o;try{o=(()=>{let o=localStorage.getItem(e);return null!==o||(o=crypto.randomUUID(),localStorage.setItem(e,o)),o})()}catch{console.log("Error while preparing device id")}const{host:r}=window.location,s=window.SPELL_ENV&&window.SPELL_ENV.MODE,a={},n={},t=new Map,l=e=>fetch("https://collector.spell.club/collect",{method:"POST",headers:{"Content-Type":"application/json",...a},body:JSON.stringify(e)}).catch((e=>{console.error("error handling collector error",e)}));let i=!1,c=!1,d=0;const m=()=>{d=0,i=!1},g=async()=>{if(!0===c||!0===i)return;if(d>=10)return c=!0,void m();if(0===t.size)return void m();i=!0;const e=[...t.values()];var o;t.clear(),await Promise.all([l(e),(o=1e3,new Promise((e=>{setTimeout((()=>{e()}),o)})))]),d+=1,i=!1,g()},p=({message:e,fileName:a,stack:l})=>{if("development"===s)return;if(!0===c)return;if((({fileName:e,stack:o})=>!!(e?.includes("bfnaelmomeimhlpmgjnjophhpkkoljpa")||o?.includes("bfnaelmomeimhlpmgjnjophhpkkoljpa")||e?.includes("nkbihfbeogaeaoehlefnkodbefgpgknn")||o?.includes("nkbihfbeogaeaoehlefnkodbefgpgknn")))({message:e,fileName:a,stack:l}))return;const i=(({message:e,fileName:o,stack:r})=>`${e}-${o}-${r}`)({message:e,fileName:a,stack:l});let d;t.has(i)?d=t.get(i):(d={message:e,file_name:a,stack:l,count:0,ts:Date.now(),device_id:o,host:r,...n},t.set(i,d)),d.count+=1,g()},f=e=>{const o=e?.config?.url;if(void 0!==o)try{e.message=`${e.message}: ${o}`}catch(e){console.log("Could not override error.message")}};window.addEventListener("error",(e=>{f(e.error),p({message:e.error.message,fileName:e.filename,stack:e.error.stack})})),window.addEventListener("unhandledrejection",(e=>{f(e.reason),p({message:e.reason.message||`Unhandled promise rejection: ${e.reason}`,fileName:e.reason.sourceURL||"",stack:e.reason.stack||""})})),window.spellErrorReport=p,window.spellErrorSetHttpHeaders=e=>{Object.assign(a,e)},window.spellErrorSetAdditionalPayloadParams=e=>{Object.assign(n,e)},window.spellGetDeviceId=()=>o})();</script>
+  <script async type="module" crossorigin src="/assets/index-Bx4JamK3.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/browserExtension/inpage.js">
+</head>
+<body class="gradient-bg">
+<div id="root">
+<div class="logo-splash">
+<img src="/icons/spell.svg" alt="Spell logo" width="180px" />
+</div>
+</div>
+</body>
+</html>
